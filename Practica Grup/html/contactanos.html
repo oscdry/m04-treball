@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my hello world website description">
+    <meta name="keywords" content="web, web development, hello world">
+   
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/contactano.css">
+
+    
+    <script src="../js/contactanos.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Register Form</h1>
+      <div>
+        <button onclick="changeLanguage('ca')">Català</button>
+        <button onclick="changeLanguage('es')">Español</button>
+        <button onclick="changeLanguage('en')">English</button>
+      </div>
+    </header>
+
+    <main>
+      <form name="register" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <p class="hidden">
+          <label>
+            Don’t fill this out if you’re human: <input name="bot-field" />
+          </label>
+        </p>
+        <div class="form-group">
+          <label for="first-name" id="t-first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" value="Oscar">
+        </div>
+        <div class="form-group">
+          <label for="last-name" id="t-last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" placeholder="Write your last name">
+        </div>
+        <div class="form-group">
+          <label for="email" class="is-required" id="t-email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="password" class="is-required" id="t-password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="message" id="t-message">Message</label>
+          <!-- <textarea name="message" id="message" cols="30" rows="10"></textarea> -->
+          <textarea name="message" id="message"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="phone" id="t-phone">Phone</label>
+          <!-- <input type="text" id="phone" name="phone" pattern="^[0-9]{9}$"> -->
+          <!-- <input type="text" id="phone" name="phone" maxlength="2"> -->
+          <input type="number" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+          <label for="birthday" id="t-birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+        <div class="form-group">
+          <label id="t-genre">Genre</label>
+          <input type="radio" id="male" name="sex">
+          <label for="male" class="inline" id="t-male">Male</label>
+          <input type="radio" id="female" name="sex">
+          <label for="female" class="inline" id="t-female">Female</label>
+          <input type="radio" id="other" name="sex">
+          <label for="other" class="inline" id="t-other">Other</label>
+        </div>
+        <div class="form-group">
+          <label id="t-pctype">Pc type</label>
+          <input type="checkbox" id="domestic" name="pctype">
+          <label for="domestic" class="inline" id="t-domestic">Domestic</label>
+          <input type="checkbox" id="gaming" name="pctype">
+          <label for="gaming" class="inline" id="t-gaming">Gaming</label>
+          <input type="checkbox" id="promgramming" name="pctype">
+          <label for="programming" class="inline" id="t-programming">Programming</label>
+        </div>
+        <div class="form-group">
+          <label for="continent" id="t-continent">Continent</label>
+          <select name="continent" id="continent">
+            <option value="Europe" id="t-europe">Europe</option>
+            <option value="Asia" id="t-asia">Asia</option>
+            <option value="South America" id="t-samerica">South America</option>
+            <option value="North America" id="t-namerica">Noth America</option>
+            <option value="Africa" id="t-Africa">Africa</option>
+            <option value="Australia" id="t-Australia">Australia</option>
+          </select>
+        </div>
+        <!-- <div class="btn">hola</div> -->
+        <!-- <input type="submit" value="Register" class="btn"> -->
+        <button class="btn" type="submit" id="t-register">Register</button>
+        <!-- <button type="reset" class="btn">Reset</button> -->
+      </form>
+    </main>
+  </body>
+</html>

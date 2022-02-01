@@ -1,0 +1,34 @@
+{
+    "form": {
+      "first_name": "Nom",
+      "last_name": "Cognom",
+      "last_name_ph": "Escriu el teu segon cognom",
+      "email": "Email",
+      "password": "Contrasenya",
+      "message": "Missatge",
+      "phone": "Teléfon",
+      "birthday": "Anniversari",
+      "genre": {
+        "main": "Génere",
+        "male": "Masculí",
+        "female": "Femení",
+        "other": "Altre"
+      },
+      "pctype": {
+        "main": "Tipus d'ordinador",
+        "domestic": "Ús Domèstic",
+        "gaming": "Gaming",
+        "programming": "Programació"
+      },
+      "continent": {
+        "main": "Continente",
+        "europe": "Europa",
+        "asia": "Àsia",
+        "samerica": "Sud Amèrica",
+        "namerica": "Nord Amèrica",
+        "africa": "Àfrica",
+        "australia": "Oceania"
+      },
+      "register": "Registre"
+    }
+  }
